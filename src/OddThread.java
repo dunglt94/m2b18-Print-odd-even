@@ -6,8 +6,8 @@ public class OddThread extends Thread {
                 if (i % 2 != 0) {
                     System.out.println("Odd number: " + i);
                 }
+                Thread.sleep(10);
             }
-            Thread.sleep(10);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

@@ -5,8 +5,8 @@ public class EvenThread extends Thread {
                 if (i % 2 == 0) {
                     System.out.println("Even number: " + i);
                 }
+                Thread.sleep(15);
             }
-            Thread.sleep(15);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
